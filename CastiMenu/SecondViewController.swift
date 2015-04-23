@@ -11,7 +11,6 @@ import UIKit
 class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet weak var entreePicker: UIPickerView!
-    
     @IBOutlet weak var entreePickerLabel: UILabel!
     
     let pickerData = ["   No Rating", "   More often", "   Less often", "   It's fine"]
@@ -41,7 +40,7 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
 
     func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView!) -> UIView {
-        var pickerLabel = view as UILabel!
+        var pickerLabel = view as! UILabel!
         if view == nil {  //if no label there yet
             pickerLabel = UILabel()
             

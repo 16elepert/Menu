@@ -117,14 +117,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		99B1BB3C1AE5CDC300BE2020 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-				99DA51BA1ACEF2E900B73158 /* Main.storyboard */,
-			);
-			name = "New Group";
-			sourceTree = "<group>";
-		};
 		99DA51A61ACEF2E800B73158 = {
 			isa = PBXGroup;
 			children = (
@@ -150,7 +142,7 @@
 				99DA51B41ACEF2E900B73158 /* AppDelegate.swift */,
 				99DA51B61ACEF2E900B73158 /* FirstViewController.swift */,
 				99DA51B81ACEF2E900B73158 /* SecondViewController.swift */,
-				99B1BB3C1AE5CDC300BE2020 /* New Group */,
+				99DA51BA1ACEF2E900B73158 /* Main.storyboard */,
 				99DA51BD1ACEF2E900B73158 /* Images.xcassets */,
 				99DA51BF1ACEF2EA00B73158 /* LaunchScreen.xib */,
 				99DA51B21ACEF2E900B73158 /* Supporting Files */,

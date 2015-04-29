@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		99B1BB231ADF02F700BE2020 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B1BB211ADF02F700BE2020 /* Bolts.framework */; };
+		99A4B7551AF1731A00D26C46 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A4B7541AF1731A00D26C46 /* Bolts.framework */; };
 		99B1BB241ADF02F700BE2020 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B1BB221ADF02F700BE2020 /* Parse.framework */; };
 		99B1BB261ADF041000BE2020 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B1BB251ADF041000BE2020 /* AudioToolbox.framework */; };
 		99B1BB281ADF041700BE2020 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B1BB271ADF041700BE2020 /* CFNetwork.framework */; };
@@ -40,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		99B1BB211ADF02F700BE2020 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		99A4B7541AF1731A00D26C46 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		99B1BB221ADF02F700BE2020 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		99B1BB251ADF041000BE2020 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		99B1BB271ADF041700BE2020 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -78,12 +78,12 @@
 				99B1BB321ADF044A00BE2020 /* Security.framework in Frameworks */,
 				99B1BB301ADF044200BE2020 /* QuartzCore.framework in Frameworks */,
 				99B1BB2E1ADF043900BE2020 /* MobileCoreServices.framework in Frameworks */,
+				99A4B7551AF1731A00D26C46 /* Bolts.framework in Frameworks */,
 				99B1BB2C1ADF042900BE2020 /* CoreLocation.framework in Frameworks */,
 				99B1BB2A1ADF042300BE2020 /* CoreGraphics.framework in Frameworks */,
 				99B1BB281ADF041700BE2020 /* CFNetwork.framework in Frameworks */,
 				99B1BB261ADF041000BE2020 /* AudioToolbox.framework in Frameworks */,
 				99B1BB241ADF02F700BE2020 /* Parse.framework in Frameworks */,
-				99B1BB231ADF02F700BE2020 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +100,7 @@
 		99B1BB3B1ADF049D00BE2020 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				99A4B7541AF1731A00D26C46 /* Bolts.framework */,
 				99B1BB391ADF048200BE2020 /* libsqlite3.dylib */,
 				99B1BB371ADF046D00BE2020 /* libz.dylib */,
 				99B1BB351ADF045A00BE2020 /* SystemConfiguration.framework */,
@@ -111,7 +112,6 @@
 				99B1BB291ADF042300BE2020 /* CoreGraphics.framework */,
 				99B1BB271ADF041700BE2020 /* CFNetwork.framework */,
 				99B1BB251ADF041000BE2020 /* AudioToolbox.framework */,
-				99B1BB211ADF02F700BE2020 /* Bolts.framework */,
 				99B1BB221ADF02F700BE2020 /* Parse.framework */,
 			);
 			name = Frameworks;

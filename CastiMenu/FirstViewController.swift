@@ -14,11 +14,6 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let testObject = PFObject(className: "TestObject")
-        testObject["cool"] = "awesome"
-        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            println("Object has been saved.")
-        }
     }
 
     override func didReceiveMemoryWarning() {

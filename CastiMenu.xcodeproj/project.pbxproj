@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		99A4B7551AF1731A00D26C46 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A4B7541AF1731A00D26C46 /* Bolts.framework */; };
-		99B1BB241ADF02F700BE2020 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B1BB221ADF02F700BE2020 /* Parse.framework */; };
 		99B1BB261ADF041000BE2020 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B1BB251ADF041000BE2020 /* AudioToolbox.framework */; };
 		99B1BB281ADF041700BE2020 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B1BB271ADF041700BE2020 /* CFNetwork.framework */; };
 		99B1BB2A1ADF042300BE2020 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B1BB291ADF042300BE2020 /* CoreGraphics.framework */; };
@@ -20,6 +18,8 @@
 		99B1BB361ADF045A00BE2020 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B1BB351ADF045A00BE2020 /* SystemConfiguration.framework */; };
 		99B1BB381ADF046D00BE2020 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B1BB371ADF046D00BE2020 /* libz.dylib */; };
 		99B1BB3A1ADF048200BE2020 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B1BB391ADF048200BE2020 /* libsqlite3.dylib */; };
+		99CBF40F1AF2AA600083A65D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CBF40D1AF2AA600083A65D /* Bolts.framework */; };
+		99CBF4101AF2AA600083A65D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CBF40E1AF2AA600083A65D /* Parse.framework */; };
 		99DA51B51ACEF2E900B73158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DA51B41ACEF2E900B73158 /* AppDelegate.swift */; };
 		99DA51B71ACEF2E900B73158 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DA51B61ACEF2E900B73158 /* FirstViewController.swift */; };
 		99DA51B91ACEF2E900B73158 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DA51B81ACEF2E900B73158 /* SecondViewController.swift */; };
@@ -40,8 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		99A4B7541AF1731A00D26C46 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		99B1BB221ADF02F700BE2020 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		99B1BB251ADF041000BE2020 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		99B1BB271ADF041700BE2020 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		99B1BB291ADF042300BE2020 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +51,8 @@
 		99B1BB351ADF045A00BE2020 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		99B1BB371ADF046D00BE2020 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		99B1BB391ADF048200BE2020 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		99CBF40D1AF2AA600083A65D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		99CBF40E1AF2AA600083A65D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		99DA51AF1ACEF2E900B73158 /* CastiMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CastiMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99DA51B31ACEF2E900B73158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99DA51B41ACEF2E900B73158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,16 +74,16 @@
 				99B1BB3A1ADF048200BE2020 /* libsqlite3.dylib in Frameworks */,
 				99B1BB381ADF046D00BE2020 /* libz.dylib in Frameworks */,
 				99B1BB361ADF045A00BE2020 /* SystemConfiguration.framework in Frameworks */,
+				99CBF40F1AF2AA600083A65D /* Bolts.framework in Frameworks */,
 				99B1BB341ADF045100BE2020 /* StoreKit.framework in Frameworks */,
 				99B1BB321ADF044A00BE2020 /* Security.framework in Frameworks */,
+				99CBF4101AF2AA600083A65D /* Parse.framework in Frameworks */,
 				99B1BB301ADF044200BE2020 /* QuartzCore.framework in Frameworks */,
 				99B1BB2E1ADF043900BE2020 /* MobileCoreServices.framework in Frameworks */,
-				99A4B7551AF1731A00D26C46 /* Bolts.framework in Frameworks */,
 				99B1BB2C1ADF042900BE2020 /* CoreLocation.framework in Frameworks */,
 				99B1BB2A1ADF042300BE2020 /* CoreGraphics.framework in Frameworks */,
 				99B1BB281ADF041700BE2020 /* CFNetwork.framework in Frameworks */,
 				99B1BB261ADF041000BE2020 /* AudioToolbox.framework in Frameworks */,
-				99B1BB241ADF02F700BE2020 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +100,8 @@
 		99B1BB3B1ADF049D00BE2020 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				99A4B7541AF1731A00D26C46 /* Bolts.framework */,
+				99CBF40D1AF2AA600083A65D /* Bolts.framework */,
+				99CBF40E1AF2AA600083A65D /* Parse.framework */,
 				99B1BB391ADF048200BE2020 /* libsqlite3.dylib */,
 				99B1BB371ADF046D00BE2020 /* libz.dylib */,
 				99B1BB351ADF045A00BE2020 /* SystemConfiguration.framework */,
@@ -112,7 +113,6 @@
 				99B1BB291ADF042300BE2020 /* CoreGraphics.framework */,
 				99B1BB271ADF041700BE2020 /* CFNetwork.framework */,
 				99B1BB251ADF041000BE2020 /* AudioToolbox.framework */,
-				99B1BB221ADF02F700BE2020 /* Parse.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

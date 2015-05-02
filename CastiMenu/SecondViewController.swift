@@ -21,13 +21,42 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var segSalad1: UISegmentedControl!
     @IBOutlet weak var saladLabel2: UILabel!
     @IBOutlet weak var segSalad2: UISegmentedControl!
+    @IBOutlet weak var done: UIBarButtonItem!
     
     let frequency = PFObject(className: "Frequency")
+    var time = "0"
+    
+    let prefs = NSUserDefaults.standardUserDefaults()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        frequency["GrillFrequency"] = "N/A"
+        frequency["EntreeFrequency"] = "N/A"
+        frequency["SoupFrequency"] = "N/A"
+        frequency["Salad1Frequency"] = "N/A"
+        frequency["Salad2Frequency"] = "N/A"
         
+        var date = NSDate()
+        var outputFormat = NSDateFormatter()
+        outputFormat.locale = NSLocale(localeIdentifier:"en_US")
+        outputFormat.dateFormat = "yyyy-MM-dd"
+        let today = outputFormat.stringFromDate(date)
+        
+        if let timer = prefs.stringForKey("Time"){
+            if  timer != today {
+                done.enabled = true
+                println("ok")
+            } else if timer == today {
+                done.enabled = false
+                println("bad")
+            }
+        } else {
+            //Nothing stored in NSUserDefaults yet. Set a value.
+            prefs.setValue("\(time)", forKey: "Time")
+            println("nothing")
+        }
     }
     
     @IBAction func indexGrill(sender: AnyObject) {
@@ -122,6 +151,25 @@ class SecondViewController: UIViewController {
     @IBAction func done(sender: AnyObject) {
         frequency.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
             println("Object has been saved.")
+        }
+        var date = NSDate()
+        var outputFormat = NSDateFormatter()
+        outputFormat.locale = NSLocale(localeIdentifier:"en_US")
+        outputFormat.dateFormat = "yyyy-MM-dd"
+        //time = outputFormat.stringFromDate(date)
+        time = "1"
+        prefs.setValue("\(time)", forKey: "Time")
+        //This code saves the value "Berlin" to a key named "userCity".
+        done.enabled = false
+    }
+    
+    @IBAction func try(sender: AnyObject) {
+        time = "1"
+        prefs.setValue("\(time)", forKey: "Time")
+        if let timer = prefs.stringForKey("Time"){
+            println("\(time)")
+        }else {
+            println("nothing")
         }
     }
 }

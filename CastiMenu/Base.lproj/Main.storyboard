@@ -184,8 +184,11 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="252" y="59" width="46" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="try:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="AOx-2n-SDU"/>
+                                </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="k2P-ur-wCf">
+                            <segmentedControl opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="k2P-ur-wCf">
                                 <rect key="frame" x="-61" y="-14" width="123" height="29"/>
                                 <segments>
                                     <segment title="N/A"/>
@@ -403,6 +406,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="done" destination="a29-Dm-7hF" id="tyj-bR-cEl"/>
                         <outlet property="entreeLabel" destination="u8M-dX-u6k" id="TFB-oi-MA4"/>
                         <outlet property="grillLabel" destination="Qum-sW-OA4" id="Myt-Jt-ucJ"/>
                         <outlet property="saladLabel1" destination="Eip-cp-Dc3" id="Iml-1j-kxa"/>
@@ -417,7 +421,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="759" y="426"/>
+            <point key="canvasLocation" x="834" y="372"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class SecondViewController: UIViewController {
+class SecondViewController: UITabBarController {
 
     @IBOutlet weak var entreeLabel: UILabel!
     @IBOutlet weak var segEntree: UISegmentedControl!
@@ -28,10 +28,15 @@ class SecondViewController: UIViewController {
     
     let prefs = NSUserDefaults.standardUserDefaults()
     
+    let menu = Singleton.sharedInstance
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
         frequency["GrillFrequency"] = "N/A"
         frequency["EntreeFrequency"] = "N/A"
         frequency["SoupFrequency"] = "N/A"
@@ -57,6 +62,15 @@ class SecondViewController: UIViewController {
             prefs.setValue("\(time)", forKey: "Time")
             println("nothing")
         }
+        
+        let entree = menu.entreeString
+        let grill = menu.grillString
+        let soup = menu.soupString
+        //let dessert = menu.dessertString
+        entreeLabel.text = entree
+        grillLabel.text = grill
+        soupLabel.text = soup
+        //dessertLabel.text = dessert
     }
     
     @IBAction func indexGrill(sender: AnyObject) {
@@ -156,8 +170,8 @@ class SecondViewController: UIViewController {
         var outputFormat = NSDateFormatter()
         outputFormat.locale = NSLocale(localeIdentifier:"en_US")
         outputFormat.dateFormat = "yyyy-MM-dd"
-        //time = outputFormat.stringFromDate(date)
-        time = "1"
+        time = outputFormat.stringFromDate(date)
+        //time = "1"
         prefs.setValue("\(time)", forKey: "Time")
         //This code saves the value "Berlin" to a key named "userCity".
         done.enabled = false

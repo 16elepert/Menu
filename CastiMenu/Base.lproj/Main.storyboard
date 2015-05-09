@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Menu-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="CastiMenu" customModuleProvider="target" sceneMemberID="viewController">
@@ -115,7 +115,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Menu" image="second" selectedImage="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="dessertLabel" destination="maZ-hn-aWB" id="AOf-Dn-srq"/>
                         <outlet property="entreeLabel" destination="YuR-s3-0AM" id="7B1-Un-LUF"/>

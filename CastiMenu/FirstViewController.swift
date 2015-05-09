@@ -52,13 +52,17 @@ extension String {
     }
 }
 
-class FirstViewController: UIViewController {
+class FirstViewController: UITabBarController {
 
     
     @IBOutlet weak var entreeLabel: UILabel!
     @IBOutlet weak var grillLabel: UILabel!
     @IBOutlet weak var soupLabel: UILabel!
     @IBOutlet weak var dessertLabel: UILabel!
+    
+    //var myMenu = OrderModel()
+    
+    let menu = Singleton.sharedInstance
     
     override func viewDidLoad() {
         // Do any additional setup after loading the view, typically from a nib.
@@ -73,6 +77,12 @@ class FirstViewController: UIViewController {
         let final:[String] = dayofWeek(getDayOfWeek(today))
         
         monday(url, final: final)
+        
+        menu.entreeString = entreeLabel.text!
+        menu.grillString = grillLabel.text!
+        menu.soupString = soupLabel.text!
+        menu.dessertString = dessertLabel.text!
+
     }
     
     func getDayOfWeek(today:String)->Int {
@@ -87,8 +97,8 @@ class FirstViewController: UIViewController {
     }
     
     func dayofWeek(week: Int) -> [String] {
-        var day = "Monday"
-        var day2 = "Tuesday"
+        var day = "no"
+        var day2 = "no"
         if week == 1 || week == 7 || week == 2 {
             day = "Monday"
             day2 = "Tuesday"
@@ -101,7 +111,7 @@ class FirstViewController: UIViewController {
         } else if week == 5 {
             day = "Thursday"
             day2 = "Friday"
-        } else if week == 7 {
+        } else if week == 6 {
             day = "Friday"
             day2 = "table"
         }
@@ -143,7 +153,7 @@ class FirstViewController: UIViewController {
     
     // http://stackoverflow.com/questions/27332992/swift-finding-a-substring-between-two-locations-in-a-string
     // https://gist.github.com/albertbori/0faf7de867d96eb83591
-    func monday(url: String!, final:[String]) -> String {
+    func monday(url: String!, final:[String]) {
         // find monday to tuesday string
         let firstDate = final[0]
         let secondDate = final[1]
@@ -151,7 +161,14 @@ class FirstViewController: UIViewController {
         let tuesday = url.indexOf("\(secondDate)")
         var startIndex = advance(url.startIndex, monday)
         var endIndex = advance(url.startIndex, tuesday)
-        var range = startIndex..<endIndex   // same as let range = Range(start: startIndex, end: endIndex)
+        var range = startIndex..<url.endIndex
+        if final[0] != "Monday" || final[0] != "Tuesday" || final[0] != "Wednesday" || final[0] != "Thursday" {
+            range = startIndex..<url.endIndex
+        } else {
+            range = startIndex..<endIndex   // same as let range = Range(start: startIndex, end: endIndex)
+        }
+        
+        
         var url = url[range]
         
         // find monday to soup string and delete it
@@ -222,11 +239,7 @@ class FirstViewController: UIViewController {
         grillLabel.text = mGrill
         soupLabel.text = mSoup
         dessertLabel.text = mDessert
-        
-        return url
     }
-   
-
 
 }
 

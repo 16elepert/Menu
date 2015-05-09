@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9931FE881AFD58310079EEC2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9931FE871AFD58310079EEC2 /* Model.swift */; };
 		99B1BB261ADF041000BE2020 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B1BB251ADF041000BE2020 /* AudioToolbox.framework */; };
 		99B1BB281ADF041700BE2020 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B1BB271ADF041700BE2020 /* CFNetwork.framework */; };
 		99B1BB2A1ADF042300BE2020 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B1BB291ADF042300BE2020 /* CoreGraphics.framework */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9931FE871AFD58310079EEC2 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		99B1BB251ADF041000BE2020 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		99B1BB271ADF041700BE2020 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		99B1BB291ADF042300BE2020 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -142,6 +144,7 @@
 				99DA51B41ACEF2E900B73158 /* AppDelegate.swift */,
 				99DA51B61ACEF2E900B73158 /* FirstViewController.swift */,
 				99DA51B81ACEF2E900B73158 /* SecondViewController.swift */,
+				9931FE871AFD58310079EEC2 /* Model.swift */,
 				99DA51BA1ACEF2E900B73158 /* Main.storyboard */,
 				99DA51BD1ACEF2E900B73158 /* Images.xcassets */,
 				99DA51BF1ACEF2EA00B73158 /* LaunchScreen.xib */,
@@ -278,6 +281,7 @@
 				99DA51B91ACEF2E900B73158 /* SecondViewController.swift in Sources */,
 				99DA51B51ACEF2E900B73158 /* AppDelegate.swift in Sources */,
 				99DA51B71ACEF2E900B73158 /* FirstViewController.swift in Sources */,
+				9931FE881AFD58310079EEC2 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

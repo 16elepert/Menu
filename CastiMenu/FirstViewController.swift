@@ -52,7 +52,7 @@ extension String {
     }
 }
 
-class FirstViewController: UITabBarController {
+class FirstViewController: UIViewController {
 
     
     @IBOutlet weak var entreeLabel: UILabel!
@@ -65,6 +65,7 @@ class FirstViewController: UITabBarController {
     let menu = Singleton.sharedInstance
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         let theURL = urlWithMovieType()
         let url:String? = performRequestWithURL(theURL)
@@ -154,6 +155,9 @@ class FirstViewController: UITabBarController {
     // http://stackoverflow.com/questions/27332992/swift-finding-a-substring-between-two-locations-in-a-string
     // https://gist.github.com/albertbori/0faf7de867d96eb83591
     func monday(url: String!, final:[String]) {
+        var url = url.stringByReplacingOccurrencesOfString("&amp;", withString: "&" , options: NSStringCompareOptions.LiteralSearch, range: nil)
+        url = url.stringByReplacingOccurrencesOfString("&quot;", withString: "'" , options: NSStringCompareOptions.LiteralSearch, range: nil)
+        
         // find monday to tuesday string
         let firstDate = final[0]
         let secondDate = final[1]
@@ -167,9 +171,7 @@ class FirstViewController: UITabBarController {
         } else {
             range = startIndex..<endIndex   // same as let range = Range(start: startIndex, end: endIndex)
         }
-        
-        
-        var url = url[range]
+        url = url[range]
         
         // find monday to soup string and delete it
         var soup = url.indexOf("Soup")

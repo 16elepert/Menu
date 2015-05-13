@@ -52,7 +52,7 @@ extension String {
     }
 }
 
-class FirstViewController: UITabBarController {
+class FirstViewController: UIViewController {
 
     
     @IBOutlet weak var entreeLabel: UILabel!
@@ -65,6 +65,7 @@ class FirstViewController: UITabBarController {
     let menu = Singleton.sharedInstance
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         let theURL = urlWithMovieType()
         let url:String? = performRequestWithURL(theURL)

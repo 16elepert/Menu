@@ -9,18 +9,20 @@
 import UIKit
 import Parse
 
-class SecondViewController: UITabBarController {
+class SecondViewController: UIViewController {
 
     @IBOutlet weak var entreeLabel: UILabel!
     @IBOutlet weak var segEntree: UISegmentedControl!
+    @IBOutlet weak var entreeMenu: UILabel!
     @IBOutlet weak var grillLabel: UILabel!
     @IBOutlet weak var segGrill: UISegmentedControl!
+    @IBOutlet weak var grillMenu: UILabel!
     @IBOutlet weak var soupLabel: UILabel!
     @IBOutlet weak var segSoup: UISegmentedControl!
-    @IBOutlet weak var saladLabel1: UILabel!
-    @IBOutlet weak var segSalad1: UISegmentedControl!
-    @IBOutlet weak var saladLabel2: UILabel!
-    @IBOutlet weak var segSalad2: UISegmentedControl!
+    @IBOutlet weak var soupMenu: UILabel!
+    @IBOutlet weak var dessertLabel: UILabel!
+    @IBOutlet weak var segDessert: UISegmentedControl!
+    @IBOutlet weak var dessertMenu: UILabel!
     @IBOutlet weak var done: UIBarButtonItem!
     
     let frequency = PFObject(className: "Frequency")
@@ -40,8 +42,7 @@ class SecondViewController: UITabBarController {
         frequency["GrillFrequency"] = "N/A"
         frequency["EntreeFrequency"] = "N/A"
         frequency["SoupFrequency"] = "N/A"
-        frequency["Salad1Frequency"] = "N/A"
-        frequency["Salad2Frequency"] = "N/A"
+        frequency["DessertFrequency"] = "N/A"
         
         var date = NSDate()
         var outputFormat = NSDateFormatter()
@@ -66,11 +67,11 @@ class SecondViewController: UITabBarController {
         let entree = menu.entreeString
         let grill = menu.grillString
         let soup = menu.soupString
-        //let dessert = menu.dessertString
-        entreeLabel.text = entree
-        grillLabel.text = grill
-        soupLabel.text = soup
-        //dessertLabel.text = dessert
+        let dessert = menu.dessertString
+        entreeMenu.text = entree
+        grillMenu.text = grill
+        soupMenu.text = soup
+        dessertMenu.text = dessert
     }
     
     @IBAction func indexGrill(sender: AnyObject) {
@@ -125,37 +126,20 @@ class SecondViewController: UITabBarController {
             default:
                 break;
             }
-        } else if sender as! NSObject == segSalad1 {
-            switch segSalad1.selectedSegmentIndex {
+        } else if sender as! NSObject == segDessert {
+            switch segDessert.selectedSegmentIndex {
             case 0:
-                saladLabel1.text = "N/A";
-                frequency["Salad1Frequency"] = "N/A"
+                dessertLabel.text = "N/A";
+                frequency["DessertFrequency"] = "N/A"
             case 1:
-                saladLabel1.text = "Less";
-                frequency["Salad1Frequency"] = "Less"
+                dessertLabel.text = "Less";
+                frequency["DessertFrequency"] = "Less"
             case 2:
-                saladLabel1.text = "Same";
-                frequency["Salad1Frequency"] = "Same"
+                dessertLabel.text = "Same";
+                frequency["DessertFrequency"] = "Same"
             case 3:
-                saladLabel1.text = "More";
-                frequency["Salad1Frequency"] = "More"
-            default:
-                break;
-            }
-        } else if sender as! NSObject == segSalad2 {
-            switch segSalad2.selectedSegmentIndex {
-            case 0:
-                saladLabel2.text = "N/A";
-                frequency["Salad2Frequency"] = "N/A"
-            case 1:
-                saladLabel2.text = "Less";
-                frequency["Salad2Frequency"] = "Less"
-            case 2:
-                saladLabel2.text = "Same";
-                frequency["Salad2Frequency"] = "Same"
-            case 3:
-                saladLabel2.text = "More";
-                frequency["Salad2Frequency"] = "More"
+                dessertLabel.text = "More";
+                frequency["DessertFrequency"] = "More"
             default:
                 break;
             }

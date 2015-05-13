@@ -25,7 +25,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var dessertName: UILabel!
     @IBOutlet weak var done: UIBarButtonItem!
     
-    let frequency = PFObject(className: "Menu")
+    var frequency = PFObject(className: "Frequency")
     var time = "0"
     
     let prefs = NSUserDefaults.standardUserDefaults()
@@ -69,16 +69,18 @@ class SecondViewController: UIViewController {
         grillName.text = grill
         soupName.text = soup
         dessertName.text = dessert
-        
+    
         frequency["\(grill)"] = "N/A"
         frequency["\(entree)"] = "N/A"
         frequency["\(soup)"] = "N/A"
         frequency["\(dessert)"] = "N/A"
+
         return (entree, grill, soup, dessert)
     }
     
     @IBAction func indexGrill(sender: AnyObject) {
         var (entree, grill, soup, dessert) = initial()
+        
         if sender as! NSObject == segGrill {
             switch segGrill.selectedSegmentIndex {
                 case 0:
@@ -148,6 +150,7 @@ class SecondViewController: UIViewController {
                 break;
             }
         }
+
     }
    
     @IBAction func done(sender: AnyObject) {

@@ -231,18 +231,6 @@
                                                 <action selector="done:" destination="8rJ-Kc-sve" id="w6e-Ia-cqR"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" style="plain" id="vBo-xb-dhi">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EIg-S6-cAu">
-                                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Like">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="try:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="AOx-2n-SDU"/>
-                                                </connections>
-                                            </button>
-                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -279,7 +267,7 @@
                                     <rect key="frame" x="26" y="138" width="282" height="29"/>
                                 </variation>
                                 <connections>
-                                    <action selector="indexGrill:" destination="8rJ-Kc-sve" eventType="valueChanged" id="WQx-IR-4cy"/>
+                                    <action selector="index:" destination="8rJ-Kc-sve" eventType="valueChanged" id="CKC-Pv-q5o"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I wish the meal appeared: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="qH7-zw-pM5">
@@ -312,7 +300,7 @@
                                     <rect key="frame" x="26" y="256" width="282" height="29"/>
                                 </variation>
                                 <connections>
-                                    <action selector="indexGrill:" destination="8rJ-Kc-sve" eventType="valueChanged" id="52H-3D-AgO"/>
+                                    <action selector="index:" destination="8rJ-Kc-sve" eventType="valueChanged" id="cE1-Z4-Z1k"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I wish the meal appeared: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ZFy-YE-WHY">
@@ -345,7 +333,7 @@
                                     <rect key="frame" x="26" y="372" width="282" height="29"/>
                                 </variation>
                                 <connections>
-                                    <action selector="indexGrill:" destination="8rJ-Kc-sve" eventType="valueChanged" id="EDu-ax-3iW"/>
+                                    <action selector="index:" destination="8rJ-Kc-sve" eventType="valueChanged" id="mDA-UU-3fp"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I wish the meal appeared: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="guA-VA-7Id">
@@ -378,9 +366,21 @@
                                     <rect key="frame" x="26" y="495" width="282" height="29"/>
                                 </variation>
                                 <connections>
-                                    <action selector="indexGrill:" destination="8rJ-Kc-sve" eventType="valueChanged" id="OsI-fj-cOu"/>
+                                    <action selector="index:" destination="8rJ-Kc-sve" eventType="valueChanged" id="XwI-ka-FCa"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PV9-i4-fQ1">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Like">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="212" y="56" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="done:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="rfi-Qg-3Ml"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -406,6 +406,7 @@
                                 <exclude reference="guA-VA-7Id"/>
                                 <exclude reference="6CD-n0-Peu"/>
                                 <exclude reference="bRu-zo-SZk"/>
+                                <exclude reference="PV9-i4-fQ1"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -431,11 +432,25 @@
                                 <include reference="guA-VA-7Id"/>
                                 <include reference="6CD-n0-Peu"/>
                                 <include reference="bRu-zo-SZk"/>
+                                <include reference="PV9-i4-fQ1"/>
                             </mask>
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
-                    <toolbarItems/>
+                    <toolbarItems>
+                        <barButtonItem style="plain" id="vBo-xb-dhi">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EIg-S6-cAu">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Like">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="try:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="AOx-2n-SDU"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="dessertLabel" destination="6CD-n0-Peu" id="5f4-kd-SW9"/>
@@ -445,10 +460,10 @@
                         <outlet property="entreeMenu" destination="VVC-Po-NP5" id="fNf-QC-TUh"/>
                         <outlet property="grillLabel" destination="Qum-sW-OA4" id="Myt-Jt-ucJ"/>
                         <outlet property="grillMenu" destination="Mff-yh-iPc" id="0Rd-DJ-a3U"/>
-                        <outlet property="segDessert" destination="bRu-zo-SZk" id="rMf-68-aaf"/>
-                        <outlet property="segEntree" destination="k2P-ur-wCf" id="2hm-Nb-gMu"/>
-                        <outlet property="segGrill" destination="qk3-qX-7ni" id="5sn-1f-Ka8"/>
-                        <outlet property="segSoup" destination="rbO-hA-EoZ" id="OsL-CN-nKs"/>
+                        <outlet property="segmDessert" destination="bRu-zo-SZk" id="svI-6g-XK8"/>
+                        <outlet property="segmEntree" destination="k2P-ur-wCf" id="hhJ-G6-wCJ"/>
+                        <outlet property="segmGrill" destination="qk3-qX-7ni" id="IUb-5H-xmw"/>
+                        <outlet property="segmSoup" destination="rbO-hA-EoZ" id="dsr-EJ-d8q"/>
                         <outlet property="soupLabel" destination="R3A-5G-hDB" id="kVp-Il-nPm"/>
                         <outlet property="soupMenu" destination="u5Z-Zf-PYw" id="bk1-SO-I1k"/>
                     </connections>

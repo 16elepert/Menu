@@ -155,6 +155,8 @@ class FirstViewController: UIViewController {
     // http://stackoverflow.com/questions/27332992/swift-finding-a-substring-between-two-locations-in-a-string
     // https://gist.github.com/albertbori/0faf7de867d96eb83591
     func monday(url: String!, final:[String]) {
+        var url = url.stringByReplacingOccurrencesOfString("nbsp;", withString: "" , options: NSStringCompareOptions.LiteralSearch, range: nil)
+        
         // find monday to tuesday string
         let firstDate = final[0]
         let secondDate = final[1]
@@ -170,7 +172,7 @@ class FirstViewController: UIViewController {
         }
         
         
-        var url = url[range]
+        url = url[range]
         
         // find monday to soup string and delete it
         var soup = url.indexOf("Soup")

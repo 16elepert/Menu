@@ -25,7 +25,7 @@
 		99DA51B71ACEF2E900B73158 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DA51B61ACEF2E900B73158 /* FirstViewController.swift */; };
 		99DA51B91ACEF2E900B73158 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DA51B81ACEF2E900B73158 /* SecondViewController.swift */; };
 		99DA51BC1ACEF2E900B73158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99DA51BA1ACEF2E900B73158 /* Main.storyboard */; };
-		99DA51BE1ACEF2E900B73158 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99DA51BD1ACEF2E900B73158 /* Images.xcassets */; };
+		99DA51BE1ACEF2E900B73158 /* Food.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99DA51BD1ACEF2E900B73158 /* Food.xcassets */; };
 		99DA51C11ACEF2EA00B73158 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99DA51BF1ACEF2EA00B73158 /* LaunchScreen.xib */; };
 		99DA51CD1ACEF2EA00B73158 /* CastiMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DA51CC1ACEF2EA00B73158 /* CastiMenuTests.swift */; };
 /* End PBXBuildFile section */
@@ -61,7 +61,7 @@
 		99DA51B61ACEF2E900B73158 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		99DA51B81ACEF2E900B73158 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		99DA51BB1ACEF2E900B73158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		99DA51BD1ACEF2E900B73158 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		99DA51BD1ACEF2E900B73158 /* Food.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Food.xcassets; sourceTree = "<group>"; };
 		99DA51C01ACEF2EA00B73158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		99DA51C61ACEF2EA00B73158 /* CastiMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CastiMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99DA51CB1ACEF2EA00B73158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 				99DA51B81ACEF2E900B73158 /* SecondViewController.swift */,
 				9931FE871AFD58310079EEC2 /* Model.swift */,
 				99DA51BA1ACEF2E900B73158 /* Main.storyboard */,
-				99DA51BD1ACEF2E900B73158 /* Images.xcassets */,
+				99DA51BD1ACEF2E900B73158 /* Food.xcassets */,
 				99DA51BF1ACEF2EA00B73158 /* LaunchScreen.xib */,
 				99DA51B21ACEF2E900B73158 /* Supporting Files */,
 			);
@@ -260,7 +260,7 @@
 			files = (
 				99DA51BC1ACEF2E900B73158 /* Main.storyboard in Resources */,
 				99DA51C11ACEF2EA00B73158 /* LaunchScreen.xib in Resources */,
-				99DA51BE1ACEF2E900B73158 /* Images.xcassets in Resources */,
+				99DA51BE1ACEF2E900B73158 /* Food.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

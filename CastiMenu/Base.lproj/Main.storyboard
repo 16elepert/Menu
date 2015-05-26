@@ -85,10 +85,10 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rVa-hL-oTR">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
-                                    <navigationItem title="Daily Menu" id="QqR-32-vpG"/>
+                                    <navigationItem title="Tuesday" id="QqR-32-vpG"/>
                                 </items>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="325" height="44"/>
                                 </variation>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="maZ-hn-aWB">
@@ -130,7 +130,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Menu" image="second" selectedImage="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Menu" image="Food" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="dessertLabel" destination="maZ-hn-aWB" id="AOf-Dn-srq"/>
                         <outlet property="entreeLabel" destination="YuR-s3-0AM" id="7B1-Un-LUF"/>
@@ -142,7 +142,7 @@
             </objects>
             <point key="canvasLocation" x="736.5" y="-489"/>
         </scene>
-        <!--Second-->
+        <!--Rate-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="CastiMenu" customModuleProvider="target" sceneMemberID="viewController">
@@ -229,7 +229,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="43n-ET-T8O">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
-                                    <navigationItem title="Daily Menu" id="eny-Ec-nxd">
+                                    <navigationItem title="Rate" id="eny-Ec-nxd">
                                         <barButtonItem key="leftBarButtonItem" title="Done" id="a29-Dm-7hF">
                                             <connections>
                                                 <action selector="done:" destination="8rJ-Kc-sve" id="w6e-Ia-cqR"/>
@@ -238,7 +238,7 @@
                                     </navigationItem>
                                 </items>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="322" height="44"/>
                                 </variation>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I wish the meal appeared: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9fN-z6-G6b">
@@ -340,30 +340,6 @@
                                     <action selector="index:" destination="8rJ-Kc-sve" eventType="valueChanged" id="mDA-UU-3fp"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PV9-i4-fQ1">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Done">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="39" y="85" width="46" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="done:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="rfi-Qg-3Ml"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="os8-TJ-yWW">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="28" y="164" width="46" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="nomore:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="NBx-sv-dWh"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I wish the meal appeared: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="guA-VA-7Id">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -397,6 +373,30 @@
                                     <action selector="index:" destination="8rJ-Kc-sve" eventType="valueChanged" id="XwI-ka-FCa"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PV9-i4-fQ1">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="67" y="673" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="done:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="rfi-Qg-3Ml"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="os8-TJ-yWW">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="26" y="673" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="nomore:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="NBx-sv-dWh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -419,11 +419,11 @@
                                 <exclude reference="ZFy-YE-WHY"/>
                                 <exclude reference="R3A-5G-hDB"/>
                                 <exclude reference="rbO-hA-EoZ"/>
-                                <exclude reference="PV9-i4-fQ1"/>
-                                <exclude reference="os8-TJ-yWW"/>
                                 <exclude reference="guA-VA-7Id"/>
                                 <exclude reference="6CD-n0-Peu"/>
                                 <exclude reference="bRu-zo-SZk"/>
+                                <exclude reference="PV9-i4-fQ1"/>
+                                <exclude reference="os8-TJ-yWW"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -446,15 +446,15 @@
                                 <include reference="ZFy-YE-WHY"/>
                                 <include reference="R3A-5G-hDB"/>
                                 <include reference="rbO-hA-EoZ"/>
-                                <include reference="PV9-i4-fQ1"/>
-                                <include reference="os8-TJ-yWW"/>
                                 <include reference="guA-VA-7Id"/>
                                 <include reference="6CD-n0-Peu"/>
                                 <include reference="bRu-zo-SZk"/>
+                                <include reference="PV9-i4-fQ1"/>
+                                <include reference="os8-TJ-yWW"/>
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Rate" image="Rate" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -498,7 +498,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="Food" width="50" height="50"/>
+        <image name="Rate" width="50" height="50"/>
     </resources>
 </document>

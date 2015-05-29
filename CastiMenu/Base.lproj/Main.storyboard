@@ -85,7 +85,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rVa-hL-oTR">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
-                                    <navigationItem title="Tuesday" id="QqR-32-vpG"/>
+                                    <navigationItem title="Daily Menu" id="QqR-32-vpG"/>
                                 </items>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="325" height="44"/>
